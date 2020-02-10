@@ -1,0 +1,1816 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bluetooth Mesh(SIG) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="SIGMesh.html" />
+    
+    
+    <link rel="prev" href="Mesh.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Overview.html">
+            
+                <a href="Overview.html">
+            
+                    
+                    Function Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    Preparation work
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="iOSAdaptation.html">
+            
+                <a href="iOSAdaptation.html">
+            
+                    
+                    iOS Adaptation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    Initiate SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="User.html">
+            
+                <a href="User.html#user-management">
+            
+                    
+                    User management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="User.html">
+            
+                <a href="User.html#use-mobile-phone-for-login">
+            
+                    
+                    Use Mobile Phone for Login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="User.html">
+            
+                <a href="User.html#use-email-for-login">
+            
+                    
+                    Use Email for Login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="User.html">
+            
+                <a href="User.html#use-uid-for-login">
+            
+                    
+                    Use uid for Login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="User.html">
+            
+                <a href="User.html#third-party-login">
+            
+                    
+                    Third Party Login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="User.html">
+            
+                <a href="User.html#login-by-auth2">
+            
+                    
+                    Login by Auth2(Login with Apple)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="User.html">
+            
+                <a href="User.html#modify-user-avatar">
+            
+                    
+                    Modify User Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="User.html">
+            
+                <a href="User.html#logout">
+            
+                    
+                    Logout, Disable Account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="User.html">
+            
+                <a href="User.html#handling-of-expired-session">
+            
+                    
+                    Handling of Expired Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Home management
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Home.html">
+            
+                <a href="Home.html#home-management">
+            
+                    
+                    Home Management Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="Home.html">
+            
+                <a href="Home.html#home-information-management">
+            
+                    
+                    Operation Class of Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="Home.html">
+            
+                <a href="Home.html#home-member-management">
+            
+                    
+                    Home Member Management Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="Home.html">
+            
+                <a href="Home.html#room-information-management">
+            
+                    
+                    Room Management Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Activator.html">
+            
+                <a href="Activator.html#network-configuration">
+            
+                    
+                    Network Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="Activator.html">
+            
+                <a href="Activator.html#ez-mode">
+            
+                    
+                    EZ mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="Activator.html">
+            
+                <a href="Activator.html#ap-mode">
+            
+                    
+                    AP mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="Activator.html">
+            
+                <a href="Activator.html#wired-network-configuration-of-zigbee">
+            
+                    
+                    Activate the ZigBee Gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="Activator.html">
+            
+                <a href="Activator.html#activate-the-zigbee-sub-device">
+            
+                    
+                    Activate the ZigBee sub-device
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Device.html">
+            
+                <a href="Device.html#device-management">
+            
+                    
+                    Device management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="Device.html">
+            
+                <a href="Device.html#update-device-information">
+            
+                    
+                    Update device information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="Device.html">
+            
+                <a href="Device.html#device-control">
+            
+                    
+                    Device Control
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="Device.html">
+            
+                <a href="Device.html#standard-device-control-beta">
+            
+                    
+                    Standard Device Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="Device.html">
+            
+                <a href="Device.html#custom-device-control">
+            
+                    
+                    Custom Device Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="Device.html">
+            
+                <a href="Device.html#modify-the-device-name">
+            
+                    
+                    Modify the device name
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="Device.html">
+            
+                <a href="Device.html#remove-device">
+            
+                    
+                    Remove device
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="Device.html">
+            
+                <a href="Device.html#obtain-wifi-signal-strength-of-device">
+            
+                    
+                    Obtain Wifi signal strength of device
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="Device.html">
+            
+                <a href="Device.html#obtain-the-sub-device-list-of-a-gateway">
+            
+                    
+                    Obtain the sub-device list of a gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="Device.html">
+            
+                <a href="Device.html#firmware-upgrade">
+            
+                    
+                    Firmware upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Share.html">
+            
+                <a href="Share.html#shared-devices">
+            
+                    
+                    Share devices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Share.html">
+            
+                <a href="Share.html#add-device-share">
+            
+                    
+                    Add device share
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Share.html">
+            
+                <a href="Share.html#getting-shared-relationships">
+            
+                    
+                    Getting Shared Relationships
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="Share.html">
+            
+                <a href="Share.html#remove-sharing">
+            
+                    
+                    Remove Sharing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Share.html">
+            
+                <a href="Share.html#modify-note-name">
+            
+                    
+                    Modify Note Name
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Timer.html">
+            
+                <a href="Timer.html">
+            
+                    
+                    Timer task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Group.html">
+            
+                <a href="Group.html">
+            
+                    
+                    Group management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    Smart scene
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#smart-scene">
+            
+                    
+                    Smart scene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="SmartScene.html">
+            
+                <a href="SmartScene.html#scene-operation">
+            
+                    
+                    Scene operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="DataChannel.html">
+            
+                <a href="DataChannel.html">
+            
+                    
+                    Data channel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="BLE.html">
+            
+                <a href="BLE.html#single-ble">
+            
+                    
+                    Single BLE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="BLE.html">
+            
+                <a href="BLE.html#bluetooth-status-monitor">
+            
+                    
+                    Bluetooth Status Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="BLE.html">
+            
+                <a href="BLE.html#ble-device-scan">
+            
+                    
+                    Bluetooth Scan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="BLE.html">
+            
+                <a href="BLE.html#active-device">
+            
+                    
+                    Active device
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="BLE.html">
+            
+                <a href="BLE.html#ble-device-ota-upgrade">
+            
+                    
+                    Firmware Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="BLE.html">
+            
+                <a href="BLE.html#device-dp-publish">
+            
+                    
+                    Device DP publish
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Mesh.html">
+            
+                <a href="Mesh.html#bluetooth-meshtuya-sdk-guide">
+            
+                    
+                    Bluetooth Mesh(TUYA)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="Mesh.html">
+            
+                <a href="Mesh.html#basic-notion">
+            
+                    
+                    Basic Notion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="Mesh.html">
+            
+                <a href="Mesh.html#management">
+            
+                    
+                    Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="Mesh.html">
+            
+                <a href="Mesh.html#configuration">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="Mesh.html">
+            
+                <a href="Mesh.html#mesh-device">
+            
+                    
+                    Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" data-path="Mesh.html">
+            
+                <a href="Mesh.html#mesh-group">
+            
+                    
+                    Group
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.6" data-path="Mesh.html">
+            
+                <a href="Mesh.html#mesh-control">
+            
+                    
+                    Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.7" data-path="Mesh.html">
+            
+                <a href="Mesh.html#firmware-upgrade">
+            
+                    
+                    Firmware Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#bluetooth-mesh-sdk-guide">
+            
+                    
+                    Bluetooth Mesh(SIG)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#introduction">
+            
+                    
+                    Basic Notion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#management">
+            
+                    
+                    Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#configuration">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#mesh-device">
+            
+                    
+                    Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#mesh-group">
+            
+                    
+                    Group
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.6" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#mesh-control">
+            
+                    
+                    Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.7" data-path="SIGMesh.html">
+            
+                <a href="SIGMesh.html#firmware-upgrade">
+            
+                    
+                    Firmware Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    Message center
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="Message.html">
+            
+                <a href="Message.html#obtain-message-list">
+            
+                    
+                    Message list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="Message.html">
+            
+                <a href="Message.html#message-push-settings">
+            
+                    
+                    Message push settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Feedback.html">
+            
+                <a href="Feedback.html">
+            
+                    
+                    Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="CommonInterface.html">
+            
+                <a href="CommonInterface.html">
+            
+                    
+                    Common interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Push.html">
+            
+                <a href="Push.html">
+            
+                    
+                    Register pushId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <a target="_blank" href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_api_reference/index.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Faq.html">
+            
+                <a href="Faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="ChangeLog.html">
+            
+                <a href="ChangeLog.html">
+            
+                    
+                    ChangeLog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Bluetooth Mesh(SIG)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="bluetooth-mesh-sdk-guide"><a name="bluetooth-mesh-sdk-guide" class="plugin-anchor" href="#bluetooth-mesh-sdk-guide"><i class="fa fa-link" aria-hidden="true"></i></a>Bluetooth Mesh SDK Guide</h2>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">// import header file</span>
+<span class="token macro property">#<span class="token directive keyword">import</span> &lt;TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit.h&gt;</span>
+</code></pre>
+<h3 id="introduction"><a name="introduction" class="plugin-anchor" href="#introduction"><i class="fa fa-link" aria-hidden="true"></i></a>Introduction</h3>
+<p>Bluetooth Special Interest Group use bluetooth technology began to fully support Mesh networks. Bluetooth Mesh, that is, a Bluetooth device is formed into a network. Each Bluetooth device can communicate through Bluetooth devices in the network, and transmit Bluetooth information at one end to the other end through the mesh network.</p>
+<p>The standard Bluetooth Mesh, also called SIG Mesh, is a communication standard for the Mesh network proposed by the Bluetooth Technology Alliance. The use of Bluetooth Mesh for networking and function point updates must meet the standards of standard Bluetooth Mesh</p>
+<h3 id="basic-notion"><a name="basic-notion" class="plugin-anchor" href="#basic-notion"><i class="fa fa-link" aria-hidden="true"></i></a>Basic Notion</h3>
+<ul>
+<li><p>pcc</p>
+<p>Each mesh device corresponds to a product, and each product has its own size class label. The SDK uses <code>pcc</code> and<code>type</code> as the size class label.</p>
+<p>The product currently follows the rules</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Device Type</th>
+<th style="text-align:center">Product Type</th>
+<th style="text-align:center">Sub Product Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">1=Tuya&apos;s standard device<br>2=Tuya&apos;s penetrate device<br></td>
+<td style="text-align:center">0x01=light <br>0x02=switch <br>0x05=remote control re<br></td>
+<td style="text-align:center">Like&#xFF1A;<br> 1= light <br> 2= wc light<br> 3= rgb light <br> 4=<br></td>
+</tr>
+</tbody>
+</table>
+<p>  ex. pcc&#xFF08;2 bytes&#xFF0C;4 charac&#xFF09;</p>
+<pre class="language-"><code class="lang-objective-c">     Tuya&apos;s standard device rgb light   <span class="token number">1310</span> <span class="token comment">// 1 01 4 read&#xFF0C; 1 means device type&#xFF0C;01 means product type, 4 means sub product type</span>
+     Tuya&apos;s standard device rgbwc light     <span class="token number">1510</span>
+     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre>
+<ul>
+<li><p>mesh node Id&#xFF0C; 2 bytes</p>
+<p>The node id is used to distinguish the &quot;unique identifier&quot; of each mesh device in the mesh network. For example, if you want to control a device, you can send the nodeId command corresponding to this device to the mesh network</p>
+</li>
+<li><p>mesh group local Id&#xFF0C;2 bytes</p>
+<p>The local Id is used to distinguish the `` unique identifier &apos;&apos; of each mesh group in the mesh network.For example, if you want to control the devices in a group, you can send the localId command corresponding to this group to the mesh network.</p>
+</li>
+<li><p>Equipment operation requires multiple steps</p>
+<p>Because device operations, such as adding and deleting operations, and group operations, require the local Bluetooth command to be executed once and recorded in the cloud once. The operation information needs to be synchronized to the local mesh network as well.</p>
+</li>
+<li><p>Local connection and gateway connection</p>
+<p>Local connection: The networked device is connected via Bluetooth to control mesh and command operations</p>
+<p>Gateway connection: The networked devices are connected through the gateway (the gateway needs to be with the device, and the distance cannot be too far) to control the mesh and command operations</p>
+</li>
+</ul>
+<h3 id="management"><a name="management" class="plugin-anchor" href="#management"><i class="fa fa-link" aria-hidden="true"></i></a>Management</h3>
+<blockquote>
+<p> <code>TuyaSmartBleMesh+SIGMesh.h</code> </p>
+</blockquote>
+<h4 id="create-mesh"><a name="create-mesh" class="plugin-anchor" href="#create-mesh"><i class="fa fa-link" aria-hidden="true"></i></a>Create Mesh</h4>
+<p>A family can have multiple sig meshes (it is recommended to create only one family). All operations in the sig mesh are based on the family data being initialized.</p>
+<blockquote>
+<p>Init home <a href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/resource/Home.html#home-management" target="_blank">See</a></p>
+</blockquote>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">/**
+ create sig mesh
+
+ @param homeId homeId
+ @param success success block
+ @param failure failure block
+ */</span>
+<span class="token operator">+</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>createSIGMeshWithHomeId<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token keyword">long</span> <span class="token keyword">long</span><span class="token punctuation">)</span>homeId
+                        success<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token punctuation">)</span><span class="token punctuation">(</span>TuyaSmartBleMeshModel <span class="token operator">*</span>meshModel<span class="token punctuation">)</span><span class="token punctuation">)</span>success
+                        failure<span class="token punctuation">:</span><span class="token punctuation">(</span>TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x300C;Example&#x300D;</p>
+<pre class="language-"><code class="lang-objective-c">TuyaSmartHome <span class="token operator">*</span>home <span class="token operator">=</span> #<span class="token operator">&lt;</span> home instance <span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token keyword">long</span> <span class="token keyword">long</span> homeId <span class="token operator">=</span> home<span class="token punctuation">.</span>homeModel<span class="token punctuation">.</span>homeId<span class="token punctuation">;</span>
+<span class="token punctuation">[</span>TuyaSmartBleMesh createSIGMeshWithHomeId<span class="token punctuation">:</span>homeId success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>TuyaSmartBleMeshModel <span class="token operator">*</span>meshModel<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// success do...</span>
+<span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;create mesh error: %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="delete-mesh"><a name="delete-mesh" class="plugin-anchor" href="#delete-mesh"><i class="fa fa-link" aria-hidden="true"></i></a>Delete Mesh</h4>
+<pre class="language-"><code>/**
+ Delete the mesh. If there are devices in the mesh group, the child devices are also removed.
+
+ @param success success block
+ @param failure failure block
+ */
+- (void)removeMeshWithSuccess:(TYSuccessHandler)success failure:(TYFailureError)failure;
+</code></pre><p>&#x300C;Example&#x300D;</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token keyword">self</span><span class="token punctuation">.</span>mesh <span class="token operator">=</span> #<span class="token operator">&lt;</span>TuyaSmartBleMesh instance<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>mesh removeMeshWithSuccess<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">{</span>
+    <span class="token comment">// success do...</span>
+<span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">XCTFail</span><span class="token punctuation">(</span><span class="token string">@&quot;test remove mesh failure: %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="get-the-list-of-sig-mesh-in-the-family"><a name="get-the-list-of-sig-mesh-in-the-family" class="plugin-anchor" href="#get-the-list-of-sig-mesh-in-the-family"><i class="fa fa-link" aria-hidden="true"></i></a>Get the list of SIG Mesh in the family</h4>
+<p>After initializing the home instance, you can get the mesh list of the corresponding family</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">/**
+ *  Get the list of SIG Mesh in the family
+ *
+ *  @param success success block
+ *  @param failure failure block
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getSIGMeshListWithSuccess<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token punctuation">)</span><span class="token punctuation">(</span>NSArray <span class="token operator">&lt;</span>TuyaSmartBleMeshModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span>list<span class="token punctuation">)</span><span class="token punctuation">)</span>success
+                          failure<span class="token punctuation">:</span><span class="token punctuation">(</span>TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x300C;Example&#x300D;</p>
+<pre class="language-"><code class="lang-objective-c">TuyaSmartHome <span class="token operator">*</span>home <span class="token operator">=</span> #<span class="token operator">&lt;</span>home instance<span class="token operator">&gt;</span>
+<span class="token punctuation">[</span>home getSIGMeshListWithSuccess<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>TuyaSmartBleMeshModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span>list<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// success do</span>
+<span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;get sig mesh list error: %@&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="get-mesh-instance"><a name="get-mesh-instance" class="plugin-anchor" href="#get-mesh-instance"><i class="fa fa-link" aria-hidden="true"></i></a>Get Mesh instance</h4>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">/**
+ Get Mesh instance
+
+ @param meshId mesh id
+ @param homeId home id
+ */</span>
+<span class="token operator">+</span> <span class="token punctuation">(</span>instancetype<span class="token punctuation">)</span>bleMeshWithMeshId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>meshId homeId<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token keyword">long</span> <span class="token keyword">long</span><span class="token punctuation">)</span>homeId<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x300C;Example&#x300D;</p>
+<p>The home instance (TuyaSmartHome instance) can get the sigMeshModel under the class</p>
+<pre class="language-"><code class="lang-objective-c">TuyaSmartBleMeshModel <span class="token operator">*</span>sigMeshModel <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">self</span> getCurrentHome<span class="token punctuation">]</span><span class="token punctuation">.</span>sigMeshModel<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="configuration"><a name="configuration" class="plugin-anchor" href="#configuration"><i class="fa fa-link" aria-hidden="true"></i></a>Configuration</h3>
+<blockquote>
+<p> <code>TuyaSmartSIGMeshManager</code> </p>
+</blockquote>
+<p>The distribution network refers to adding devices that are in the reset state and not connected to the sig mesh network.</p>
+<p>The following is a list of common device reset methods</p>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>reset</th>
+<th>show</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Light</td>
+<td>Three consecutive switches</td>
+<td>flashes quickly</td>
+</tr>
+<tr>
+<td>Switch</td>
+<td>Long press 3s</td>
+<td>flashes quickly</td>
+</tr>
+</tbody>
+</table>
+<h4 id="bluetooth-scan"><a name="bluetooth-scan" class="plugin-anchor" href="#bluetooth-scan"><i class="fa fa-link" aria-hidden="true"></i></a>Bluetooth Scan</h4>
+<p>Scan for nearby SIG-compliant Bluetooth devices</p>
+<blockquote>
+<p>&#x26A0;&#xFE0F; Note: The meshModel here needs to be passed in the sigMeshModel parameter in TuyaSmartHome, not the meshModel</p>
+</blockquote>
+<pre class="language-"><code>/**
+ Start scan
+
+ @param scanType Scanning type, currently divided into unconfigured network and configured network, the scanned network will automatically enter the network
+ @param meshModel mesh model 
+ */
+- (void)startScanWithScanType:(TuyaSmartSIGScanType)scanType 
+          meshModel:(TuyaSmartBleMeshModel *)meshModel;
+</code></pre><p>&#x300C;Example&#x300D;</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token punctuation">[</span>TuyaSmartSIGMeshManager sharedInstance<span class="token punctuation">]</span><span class="token punctuation">.</span>delegate <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+<span class="token comment">// ScanForUnprovision, // Scan for unconfigured devices</span>
+<span class="token comment">// ScanForProxyed, // Scan for devices that have been configured</span>
+<span class="token punctuation">[</span><span class="token punctuation">[</span>TuyaSmartSIGMeshManager sharedInstance<span class="token punctuation">]</span> startScanWithScanType<span class="token punctuation">:</span>ScanForUnprovision 
+                            meshModel<span class="token punctuation">:</span>home<span class="token punctuation">.</span>sigMeshModel<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p>After scanning the device, you can implement the following methods in the TuyaSmartSIGMeshManagerDelegate callback to get the scanned device.</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">/**
+ Scanning to devices to be configured
+
+ @param manager mesh manager
+ @param device Network equipment information to be allocated
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>sigMeshManager<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSIGMeshManager <span class="token operator">*</span><span class="token punctuation">)</span>manager
+     didScanedDevice<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSIGMeshDiscoverDeviceInfo <span class="token operator">*</span><span class="token punctuation">)</span>device<span class="token punctuation">;</span>
+</code></pre>
+<h4 id="sub-device-bluetooth-distribution-network"><a name="sub-device-bluetooth-distribution-network" class="plugin-anchor" href="#sub-device-bluetooth-distribution-network"><i class="fa fa-link" aria-hidden="true"></i></a>Sub Device Bluetooth distribution network</h4>
+<p>After scanning the surrounding network devices that meet the protocol specifications, you can configure the network (s).</p>
+<p>Networking is to add Bluetooth devices that have not joined the mesh network to the mesh network through a certain communication process.</p>
+<ul>
+<li><p>Active</p>
+<pre class="language-"><code>/**
+ Start Active
+
+ @param devList List of devices to be activated
+ @param meshModel mesh model
+ */
+- (void)startActive:(NSArray<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TuyaSmartSIGMeshDiscoverDeviceInfo</span> <span class="token attr-name">*</span><span class="token punctuation">&gt;</span></span> *)devList
+      meshModel:(TuyaSmartBleMeshModel *)meshModel;
+</code></pre></li>
+<li><p>delegate</p>
+<p>When a device is activated successfully or fails, the following methods will be called back through TuyaSmartSIGMeshManagerDelegate:</p>
+<pre class="language-"><code class="lang-objc"><span class="token comment">/**
+ Activate child device successfully callback
+
+ @param manager mesh manager
+ @param device Device
+ @param devId dev Id
+ @param error active error&#xFF0C;`name` or `deviceId` is empty
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>sigMeshManager<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSIGMeshManager <span class="token operator">*</span><span class="token punctuation">)</span>manager 
+    didActiveSubDevice<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSIGMeshDiscoverDeviceInfo <span class="token operator">*</span><span class="token punctuation">)</span>device 
+                 devId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>devId
+                 error<span class="token punctuation">:</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span><span class="token punctuation">)</span>error<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ Activate child device failure callback
+
+ @param manager mesh manager
+ @param device 
+ @param error errors 
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>sigMeshManager<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSIGMeshManager <span class="token operator">*</span><span class="token punctuation">)</span>manager 
+    didFailToActiveDevice<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSIGMeshDiscoverDeviceInfo <span class="token operator">*</span><span class="token punctuation">)</span>device 
+         error<span class="token punctuation">:</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span><span class="token punctuation">)</span>error<span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p>Deactivate device</p>
+<p>At any stage in the scanning device and network configuration, calling the following methods will stop the network configuration process for Bluetooth devices.</p>
+<pre class="language-"><code class="lang-objective-c">
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>stopActiveDevice<span class="token punctuation">;</span>
+</code></pre>
+<h4 id="sub-device-network-connection"><a name="sub-device-network-connection" class="plugin-anchor" href="#sub-device-network-connection"><i class="fa fa-link" aria-hidden="true"></i></a>Sub-device network connection</h4>
+</li>
+</ul>
+<p>After entering the network, it is scanned first, but the scan type is changed to ScanForProxyed, and then the network can be automatically connected</p>
+<ul>
+<li><p>mesh connection flag</p>
+<p>In the process of operation, it is often judged whether the existing equipment of the mesh is connected to the network through Bluetooth to determine the method of issuing control commands and operation commands.</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">// mesh local connection identifier, there is a device connected via Bluetooth, this attribute is yes</span>
+BOOL isLogin <span class="token operator">=</span> <span class="token punctuation">[</span>TuyaSmartSIGMeshManager sharedInstance<span class="token punctuation">]</span><span class="token punctuation">.</span>isLogin<span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="sig-mesh-gateway-active"><a name="sig-mesh-gateway-active" class="plugin-anchor" href="#sig-mesh-gateway-active"><i class="fa fa-link" aria-hidden="true"></i></a>SIG Mesh gateway active</h4>
+<p>SIG Mesh gateway active EZ , see <a href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/resource/Activator.html#activate-the-zigbee-sub-device" target="_blank"> EZ mode</a></p>
+<p>SIG Mesh gateway atcive sub device, see <a href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/resource/Activator.html#activate-the-zigbee-sub-device" target="_blank">sub-device</a></p>
+<h3 id="mesh-device"><a name="mesh-device" class="plugin-anchor" href="#mesh-device"><i class="fa fa-link" aria-hidden="true"></i></a>Mesh Device</h3>
+<blockquote>
+<p>Like the Home SDK, the device class is TuyaSmartDevice. The deviceType information in TuyaSmartDeviceModel inside can distinguish the device type.</p>
+<p>Here the mesh device corresponds to the deviceType type TuyaSmartDeviceModelTypeSIGMeshSubDev</p>
+</blockquote>
+<h4 id="get-device-instance"><a name="get-device-instance" class="plugin-anchor" href="#get-device-instance"><i class="fa fa-link" aria-hidden="true"></i></a>Get device instance</h4>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">+</span> <span class="token punctuation">(</span>instancetype<span class="token punctuation">)</span>deviceWithDeviceId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>devId<span class="token punctuation">;</span>
+</code></pre>
+<h4 id="local-connection-and-gateway-connection"><a name="local-connection-and-gateway-connection" class="plugin-anchor" href="#local-connection-and-gateway-connection"><i class="fa fa-link" aria-hidden="true"></i></a>Local connection and gateway connection</h4>
+<ul>
+<li><p>Local connection</p>
+<p>The Bluetooth of the mobile phone is turned on and the mesh device is controlled by Bluetooth.</p>
+<p> <code>deviceModel.isOnline &amp;&amp; deviceModel.isMeshBleOnline</code></p>
+</li>
+<li><p>gateway connection</p>
+<p>The mobile phone&apos;s Bluetooth is not turned on or is far away from the device. The mesh device controls the connection through the gateway and issues commands by Wi-Fi.</p>
+<p> <code>deviceModel.isOnline &amp;&amp; !deviceModel.isMeshBleOnline</code></p>
+</li>
+</ul>
+<h4 id="get-device-status"><a name="get-device-status" class="plugin-anchor" href="#get-device-status"><i class="fa fa-link" aria-hidden="true"></i></a>Get device status</h4>
+<pre class="language-"><code>/**
+ Get device status
+
+ @param deviceModel device model
+ */
+- (void)getDeviceStatusWithDeviceModel:(TuyaSmartDeviceModel *)deviceModel;
+</code></pre><h4 id="remove-device"><a name="remove-device" class="plugin-anchor" href="#remove-device"><i class="fa fa-link" aria-hidden="true"></i></a>Remove Device</h4>
+<p><a href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/resource/Device.html#remove-device" target="_blank">See</a></p>
+<h3 id="mesh-group"><a name="mesh-group" class="plugin-anchor" href="#mesh-group"><i class="fa fa-link" aria-hidden="true"></i></a>Mesh Group</h3>
+<p>In the Bluetooth Mesh network, you can group some devices into groups and use group commands to control the devices in the group. For example, you can add all light groups to a group, and control the group&apos;s switches, colors, etc. directly. All lights in the control group have the same properties</p>
+<h4 id="1-add-group"><a name="1-add-group" class="plugin-anchor" href="#1-add-group"><i class="fa fa-link" aria-hidden="true"></i></a>1. Add Group</h4>
+<blockquote>
+<p>For the addition of SIG Mesh groups, in order to ensure consistent functions, it is recommended to add devices of the same category to the group</p>
+</blockquote>
+<p>Before adding a group, you need to get the group address from the server: You can call the following of TuyaSmartBleMeshGroup</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">/**
+ Assign a group ID to the cloud
+
+ @param meshId mesh id
+ @param success localid 10 &#x8FDB;&#x5236;
+ @param failure failure block
+ */</span>
+<span class="token operator">+</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getBleMeshGroupAddressFromCluondWithMeshId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>meshId
+                                           success<span class="token punctuation">:</span><span class="token punctuation">(</span>TYSuccessInt<span class="token punctuation">)</span>success
+                                           failure<span class="token punctuation">:</span><span class="token punctuation">(</span>TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x26A0;&#xFE0F; The group address returned from the server needs to be added with 0x4000, and then called to get a group named by groupName under the current sigMeshModel</p>
+<pre class="language-"><code class="lang-objective-c">
+
+<span class="token comment">/**
+ create mesh group
+
+ @param groupName mesh name
+ @param meshId    meshId
+ @param localId    2 bytes hex string
+ @param pcc pcc
+ @param success GroupId
+ @param failure 
+ */</span>
+<span class="token operator">+</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>createMeshGroupWithGroupName<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>groupName
+                              meshId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>meshId
+                             localId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>localId
+                                 pcc<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>pcc
+                             success<span class="token punctuation">:</span><span class="token punctuation">(</span>TYSuccessInt<span class="token punctuation">)</span>success
+                             failure<span class="token punctuation">:</span><span class="token punctuation">(</span>TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<h4 id="2add-device-to-group"><a name="2add-device-to-group" class="plugin-anchor" href="#2add-device-to-group"><i class="fa fa-link" aria-hidden="true"></i></a>2.Add device to group</h4>
+<blockquote>
+<p>  <code>groupAddress = [localId inValue]</code> </p>
+</blockquote>
+<ul>
+<li><p>Local Bluetooth</p>
+<p>If you need to add a device to the group, you need to call the following method of <code>TuyaSmartSIGMeshManager</code></p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-objc">
+  <span class="token comment">/**
+   Add device to group
+
+   @param devId dev id
+   @param groupAddress 
+   */</span>
+  <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>addDeviceToGroupWithDevId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>devId
+                       groupAddress<span class="token punctuation">:</span><span class="token punctuation">(</span>uint32_t<span class="token punctuation">)</span>groupAddress<span class="token punctuation">;</span>
+
+
+  <span class="token comment">//  TuyaSmartSIGMeshManagerDelegate </span>
+  <span class="token comment">/**
+   group callback
+
+   @param manager manager
+   @param groupAddress group mesh address&#xFF0C; 16 &#x8FDB;&#x5236;
+   @param nodeId device mesh address&#xFF0C;16 &#x8FDB;&#x5236;
+   @param error 
+   */</span>
+  <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>sigMeshManager<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSIGMeshManager <span class="token operator">*</span><span class="token punctuation">)</span>manager 
+  didHandleGroupWithGroupAddress<span class="token punctuation">:</span><span class="token punctuation">(</span>nonnull NSString <span class="token operator">*</span><span class="token punctuation">)</span>groupAddress 
+            deviceNodeId<span class="token punctuation">:</span><span class="token punctuation">(</span>nonnull NSString <span class="token operator">*</span><span class="token punctuation">)</span>nodeId 
+               error<span class="token punctuation">:</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span><span class="token punctuation">)</span>error<span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li><p>Gateway</p>
+<p>Adding sub-devices to the mesh group through the gateway can be operated through TuyaSmartBleMeshGroup</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">/**
+ Adding a sig mesh sub-device group through a sig mesh gateway
+  Need to ensure that the sub-device relationship belongs to the sig mesh gateway
+
+ @param subList Sub-devices under the gateway to be operated
+ @param success
+ @param failure 
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>addSubDeviceWithSubList<span class="token punctuation">:</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>TuyaSmartDeviceModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span> _Nonnull <span class="token punctuation">)</span>subList success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessHandler<span class="token punctuation">)</span>success failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+
+<span class="token comment">//  TuyaSmartBleMeshGroupDelegate </span>
+<span class="token keyword">@protocol</span> TuyaSmartBleMeshGroupDelegate <span class="token operator">&lt;</span>NSObject<span class="token operator">&gt;</span>
+
+<span class="token comment">/// Group Response of Zigbee Devices Joining Gateway</span>
+<span class="token comment">/// 1: Over the Scenario Limit 2: Subdevice Timeout 3: Setting Value Out of Range 4: Write File Error 5: Other Errors</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>meshGroup<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartBleMeshGroup <span class="token operator">*</span><span class="token punctuation">)</span>group addResponseCode<span class="token punctuation">:</span><span class="token punctuation">(</span>NSArray <span class="token operator">&lt;</span>NSNumber <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span><span class="token punctuation">)</span>responseCode<span class="token punctuation">;</span>
+
+<span class="token keyword">@end</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="3-remove-device-from-group"><a name="3-remove-device-from-group" class="plugin-anchor" href="#3-remove-device-from-group"><i class="fa fa-link" aria-hidden="true"></i></a>3. Remove device from group</h4>
+<ul>
+<li><p>Local Bluetooth</p>
+<p>If you need to remove a device from the group, you can use the following methods:</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">/**
+ Remove device from group
+
+ @param devId dev id
+ @param groupAddress group address
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>deleteDeviceToGroupWithDevId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>devId groupAddress<span class="token punctuation">:</span><span class="token punctuation">(</span>uint32_t<span class="token punctuation">)</span>groupAddress<span class="token punctuation">;</span>
+
+<span class="token comment">//  TuyaSmartSIGMeshManagerDelegate </span>
+<span class="token comment">/**
+ group callback
+
+ @param manager manager
+ @param groupAddress group mesh address&#xFF0C; 16 &#x8FDB;&#x5236;
+ @param nodeId group mesh address&#xFF0C;16 &#x8FDB;&#x5236;
+ @param error 
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>sigMeshManager<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSIGMeshManager <span class="token operator">*</span><span class="token punctuation">)</span>manager 
+didHandleGroupWithGroupAddress<span class="token punctuation">:</span><span class="token punctuation">(</span>nonnull NSString <span class="token operator">*</span><span class="token punctuation">)</span>groupAddress 
+          deviceNodeId<span class="token punctuation">:</span><span class="token punctuation">(</span>nonnull NSString <span class="token operator">*</span><span class="token punctuation">)</span>nodeId 
+             error<span class="token punctuation">:</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span><span class="token punctuation">)</span>error<span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p>Gateway</p>
+<p>Deleting devices into the mesh group through the gateway can be operated through <code>TuyaSmartBleMeshGroup</code></p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">/**
+ Adding a sig mesh sub-device group through a sig mesh gateway
+  Need to ensure that the sub-device relationship belongs to the sig mesh gateway
+
+ @param subList Sub-devices under the gateway to be operated
+ @param success 
+ @param failure 
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>removeSubDeviceWithSubList<span class="token punctuation">:</span><span class="token punctuation">(</span>NSArray<span class="token operator">&lt;</span>TuyaSmartDeviceModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span> _Nonnull <span class="token punctuation">)</span>subList success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessHandler<span class="token punctuation">)</span>success failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+
+<span class="token comment">//  TuyaSmartBleMeshGroupDelegate callback</span>
+<span class="token keyword">@protocol</span> TuyaSmartBleMeshGroupDelegate <span class="token operator">&lt;</span>NSObject<span class="token operator">&gt;</span>
+
+<span class="token comment">/// Group Response of Zigbee Devices removing Gateway</span>
+<span class="token comment">/// 1: Over the Scenario Limit 2: Subdevice Timeout 3: Setting Value Out of Range 4: Write File Error 5: Other Errors</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>meshGroup<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartBleMeshGroup <span class="token operator">*</span><span class="token punctuation">)</span>group removeResponseCode<span class="token punctuation">:</span><span class="token punctuation">(</span>NSArray <span class="token operator">&lt;</span>NSNumber <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span><span class="token punctuation">)</span>responseCode<span class="token punctuation">;</span>
+
+<span class="token keyword">@end</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="4-sync-group-info"><a name="4-sync-group-info" class="plugin-anchor" href="#4-sync-group-info"><i class="fa fa-link" aria-hidden="true"></i></a>4. Sync group info</h4>
+<p>If the add \ deletion succeeds or fails, you can receive the result through the proxy method, and use the group instance to change the cloud device synchronization within the group.</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">// TuyaSmartBleMeshGroup </span>
+
+<span class="token comment">/**
+ ADD device
+
+ @param success 
+ @param failure 
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>addDeviceWithDeviceId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>deviceId success<span class="token punctuation">:</span><span class="token punctuation">(</span>TYSuccessHandler<span class="token punctuation">)</span>success failure<span class="token punctuation">:</span><span class="token punctuation">(</span>TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ Remove device
+
+ @param success 
+ @param failure 
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>removeDeviceWithDeviceId<span class="token punctuation">:</span><span class="token punctuation">(</span>NSString <span class="token operator">*</span><span class="token punctuation">)</span>deviceId success<span class="token punctuation">:</span><span class="token punctuation">(</span>TYSuccessHandler<span class="token punctuation">)</span>success failure<span class="token punctuation">:</span><span class="token punctuation">(</span>TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+<h4 id="5-query-group-device"><a name="5-query-group-device" class="plugin-anchor" href="#5-query-group-device"><i class="fa fa-link" aria-hidden="true"></i></a>5. Query Group Device</h4>
+<p><code>TuyaSmartSIGMeshManager</code></p>
+<pre class="language-"><code class="lang-objc"><span class="token comment">/**
+ Query devices in a group by group address
+
+ @param groupAddress group address
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>queryGroupMemberWithGroupAddress<span class="token punctuation">:</span><span class="token punctuation">(</span>uint32_t<span class="token punctuation">)</span>groupAddress<span class="token punctuation">;</span>
+</code></pre>
+<p>Callback&#xFF1A;</p>
+<pre class="language-"><code class="lang-objc"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>sigMeshManager<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartSIGMeshManager <span class="token operator">*</span><span class="token punctuation">)</span>manager
+      queryDeviceModel<span class="token punctuation">:</span><span class="token punctuation">(</span>TuyaSmartDeviceModel <span class="token operator">*</span><span class="token punctuation">)</span>deviceModel
+          groupAddress<span class="token punctuation">:</span><span class="token punctuation">(</span>uint32_t<span class="token punctuation">)</span>groupAddress<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="mesh-control"><a name="mesh-control" class="plugin-anchor" href="#mesh-control"><i class="fa fa-link" aria-hidden="true"></i></a>Mesh Control</h3>
+<h4 id="dp-publish"><a name="dp-publish" class="plugin-anchor" href="#dp-publish"><i class="fa fa-link" aria-hidden="true"></i></a>DP publish</h4>
+<p><code>{&quot;(dpId)&quot; : &quot;(dpValue)&quot;}</code>,  <code>@{@&quot;101&quot; : @&quot;44&quot;}</code></p>
+<ul>
+<li><p>Control Device</p>
+<pre class="language-"><code class="lang-objc"><span class="token comment">// TuyaSmartDevice </span>
+<span class="token comment">/**
+ *  dp command publish.
+ *
+ *  @param dps     dp dictionary
+ *  @param success Success block
+ *  @param failure Failure block
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>publishDps<span class="token punctuation">:</span><span class="token punctuation">(</span>NSDictionary <span class="token operator">*</span><span class="token punctuation">)</span>dps
+           success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessHandler<span class="token punctuation">)</span>success
+           failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p>Control Group</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">// TuyaSmartBleMeshGroup</span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>publishDps<span class="token punctuation">:</span><span class="token punctuation">(</span>NSDictionary <span class="token operator">*</span><span class="token punctuation">)</span>dps success<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYSuccessHandler<span class="token punctuation">)</span>success failure<span class="token punctuation">:</span><span class="token punctuation">(</span>nullable TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="firmware-upgrade"><a name="firmware-upgrade" class="plugin-anchor" href="#firmware-upgrade"><i class="fa fa-link" aria-hidden="true"></i></a>Firmware Upgrade</h3>
+<h4 id="query-firmware-info"><a name="query-firmware-info" class="plugin-anchor" href="#query-firmware-info"><i class="fa fa-link" aria-hidden="true"></i></a>Query firmware info</h4>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">//  TuyaSmartDevice </span>
+<span class="token comment">/**
+ *  get device upgrade info
+ *
+ *  @param success 
+ *  @param failure 
+ */</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>getFirmwareUpgradeInfo<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">^</span><span class="token punctuation">)</span><span class="token punctuation">(</span>NSArray <span class="token operator">&lt;</span>TuyaSmartFirmwareUpgradeModel <span class="token operator">*</span><span class="token operator">&gt;</span> <span class="token operator">*</span>upgradeModelList<span class="token punctuation">)</span><span class="token punctuation">)</span>success failure<span class="token punctuation">:</span><span class="token punctuation">(</span>TYFailureError<span class="token punctuation">)</span>failure<span class="token punctuation">;</span>
+
+<span class="token comment">/*
+type 
+     0  updrading
+     1  no upgrade
+     2  force or remind upgrade
+     3  check upgrade
+*/</span>
+</code></pre>
+<h4 id="sub-device-upgrade"><a name="sub-device-upgrade" class="plugin-anchor" href="#sub-device-upgrade"><i class="fa fa-link" aria-hidden="true"></i></a>Sub-Device Upgrade</h4>
+<h5 id="1-ensure-device-online"><a name="1-ensure-device-online" class="plugin-anchor" href="#1-ensure-device-online"><i class="fa fa-link" aria-hidden="true"></i></a>1. Ensure device online</h5>
+<p>The sub-devices are upgraded through Bluetooth, so you need to determine whether the device is locally connected, and confirm the local online before performing subsequent operations.</p>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">// BOOL isBLEOnline = device.deviceModel.isMeshBleOnline;</span>
+</code></pre>
+<h5 id="2-tell-sdk-upgrade-device-node-id"><a name="2-tell-sdk-upgrade-device-node-id" class="plugin-anchor" href="#2-tell-sdk-upgrade-device-node-id"><i class="fa fa-link" aria-hidden="true"></i></a>2. Tell sdk upgrade device node id</h5>
+<pre class="language-"><code class="lang-objc"><span class="token punctuation">[</span>TuyaSmartSIGMeshManager sharedInstance<span class="token punctuation">]</span><span class="token punctuation">.</span>delegate <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+<span class="token punctuation">[</span><span class="token punctuation">[</span>TuyaSmartSIGMeshManager sharedInstance<span class="token punctuation">]</span> prepareForOTAWithTargetNodeId<span class="token punctuation">:</span><span class="token keyword">self</span><span class="token punctuation">.</span>device<span class="token punctuation">.</span>deviceModel<span class="token punctuation">.</span>nodeId<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="3-wait-device-upgrade-success-callback"><a name="3-wait-device-upgrade-success-callback" class="plugin-anchor" href="#3-wait-device-upgrade-success-callback"><i class="fa fa-link" aria-hidden="true"></i></a>3. Wait device upgrade success callback</h5>
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">// TuyaSmartSIGMeshManagerDelegate </span>
+
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>notifySIGLoginSuccess <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>TuyaSmartSIGMeshManager sharedInstance<span class="token punctuation">]</span><span class="token punctuation">.</span>delegate <span class="token operator">=</span> nil<span class="token punctuation">;</span>
+    <span class="token comment">//weakify(self);</span>
+    <span class="token punctuation">[</span><span class="token punctuation">[</span>TuyaSmartSIGMeshManager sharedInstance<span class="token punctuation">]</span> startSendOTAPack<span class="token punctuation">:</span>_otaData targetVersion<span class="token punctuation">:</span>_upgradeModel<span class="token punctuation">.</span>version success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">{</span>
+        <span class="token comment">//strongify(self);</span>
+      <span class="token comment">// update version</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span> updateVersion<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">{</span>
+        <span class="token comment">// log error</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h5 id="4-update-device-version"><a name="4-update-device-version" class="plugin-anchor" href="#4-update-device-version"><i class="fa fa-link" aria-hidden="true"></i></a>4. Update Device Version</h5>
+<pre class="language-"><code class="lang-objective-c"><span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>updateVersion <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>device updateDeviceVersion<span class="token punctuation">:</span>_upgradeModel<span class="token punctuation">.</span>version type<span class="token punctuation">:</span>_upgradeModel<span class="token punctuation">.</span>type success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">{</span>
+        <span class="token comment">// ota success</span>
+    <span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// log error</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="mesh-gateway-upgrade"><a name="mesh-gateway-upgrade" class="plugin-anchor" href="#mesh-gateway-upgrade"><i class="fa fa-link" aria-hidden="true"></i></a>Mesh Gateway upgrade</h4>
+<p>See <a href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/resource/Device.html#firmware-upgrade" target="_blank">firmware upgrade</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Mesh.html#firmware-upgrade" class="navigation navigation-prev " aria-label="Previous page: Firmware Upgrade">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="SIGMesh.html#introduction" class="navigation navigation-next " aria-label="Next page: Basic Notion">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bluetooth Mesh(SIG)","level":"1.17","depth":1,"next":{"title":"Basic Notion","level":"1.17.1","depth":2,"anchor":"#introduction","path":"resource/SIGMesh.md","ref":"./resource/SIGMesh.md#introduction","articles":[]},"previous":{"title":"Firmware Upgrade","level":"1.16.7","depth":2,"anchor":"#firmware-upgrade","path":"resource/Mesh.md","ref":"./resource/Mesh.md#firmware-upgrade","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec"},"ignore":["sequence"]},"js-sequence-diagram-full":{},"anchors":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"resource/SIGMesh.md","mtime":"2020-02-10T09:09:37.195Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-10T09:10:22.112Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
